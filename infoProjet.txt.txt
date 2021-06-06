@@ -1,0 +1,10 @@
+Projet : affichage d'une liste des applications de la gestion de droit en utilisant une grid de l'encemble de components Synfusion pour angular et un backend nodeJs+Express
+Utilisation d'un service applicationService.
+Grid avec fonctionnalités :
+- paging
+- sorting
+- suppression
+
+=> fonctionne 
+
+edit : insert : fonctionne pas encore
