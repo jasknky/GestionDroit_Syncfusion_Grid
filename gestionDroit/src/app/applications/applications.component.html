@@ -1,0 +1,12 @@
+<ejs-grid
+    [dataSource]='data'  height='300px' [allowPaging]="true"  [allowSorting]="true" [pageSettings]='pageSettings'
+    [editSettings]='editSettings' [toolbar]='toolbar' (commandClick)='commandClick($event)' (actionBegin)='actionBegin($event)' >
+    <e-columns>
+        <e-column field='APPLI_ID'  isPrimaryKey='true' [allowEditing]= 'false' defaultValue= '' headerText='ID' textAlign='Right' width=90></e-column>
+        <e-column field='APPLI_NOM_COURT' headerText='Nom court' width=120></e-column>
+        <e-column field='APPLI_NOM_LONG' headerText='Nom long' textAlign='Right'  width=90 ></e-column>
+        <e-column field='APPLI_DESCRIPTION' headerText='Description' textAlign='Right' width=120></e-column>
+        <e-column field='APPLI_EMAIL' headerText='Email' textAlign='Right' width=120 ></e-column>
+        <e-column headerText='Commands' width=140 [commands]='commands'></e-column>
+    </e-columns>
+</ejs-grid>
